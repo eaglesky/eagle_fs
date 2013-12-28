@@ -1,0 +1,22 @@
+Testing mkfs flag string in block 1: Eagle
+Passed!
+
+Testing super block content:
+File system size: -2147483648
+Free blocks number: 530481
+Inode list size: 20
+Free inodes number: 1119
+Is modified? 0
+Remembered index for next free disk inode search: 0
+Lock flag: 0
+Search index for next free inode: 19
+Head of free blocks list: 22
+Next free block position: 1
+Super Block Size: 108
+Disk inode size: 72
+Free inode temp list: 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 
+Passed!
+
+Testing free data block list:
+Number of free data blocks: 530481
+Passed!(1 used)

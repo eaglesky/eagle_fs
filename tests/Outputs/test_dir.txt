@@ -1,0 +1,13 @@
+
+eagle_sys_mkdir:  can make directory!
+directory entries under "/": 
+0	.
+0	..
+1	hello
+3	another
+
+eagle_sys_rmdir: can remove directory!
+directory entries under "/": 
+0	.
+0	..
+1	hello

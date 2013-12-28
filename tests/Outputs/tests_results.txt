@@ -1,0 +1,14 @@
+gcc -g -o c-file-test c-file-test.c -lpthread
+gcc -g -o c-file-test-2 c-file-test-2.c -lpthread
+running Rich test 1
+running Rich test 2
+Options are "make bsd" and "make SysV" - the default is "bsd".
+If you get messages about missing functions, try "make SysV."
+make Bonnie 
+make[1]: Entering directory `/home/ec2-user/mnt/bonnie'
+cc -O2     Bonnie.c   -o Bonnie
+make[1]: Leaving directory `/home/ec2-user/mnt/bonnie'
+              ---Sequential Output (nosync)--- ---Sequential Input-- --Rnd Seek-
+              -Per Char- --Block--- -Rewrite-- -Per Char- --Block--- --04k (03)-
+Machine    MB K/sec %CPU K/sec %CPU K/sec %CPU K/sec %CPU K/sec %CPU   /sec %CPU
+ip-10- 1* 250 10363 14.7  6180  2.1   638  0.2  9412 14.2  8392  0.7  359.6  1.3
