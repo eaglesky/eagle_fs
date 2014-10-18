@@ -5,6 +5,7 @@ By: Yalun Qin(yalun@umail.ucsb.edu)
        Bin Xu(bin_xu@umail.ucsb.edu)
 
 Phase 1: 
+
 Requirements completed. Our Eagle File System passed all the test we made, therefore it  works well on our laptops, and should will pass other tests , 
 if God bless us. ^_^
 
@@ -16,6 +17,7 @@ Supported system calls:
 open, close, read, write, mkdir, rmdir,  mknod, unlink, readdir.
 
 Phase 2:
+
 We separate mkfs function from previous code in this phase and integrate it into our new
 program "eagle_mkfs". This program is used to format the disk, so it must be
 called at least once before mounting our file system to a new disk. Also note that
@@ -30,6 +32,7 @@ support and use of commands like ls, touch, vim, dd, mkdir, rm, cp. We also
 tested the persistence. Our file system passed all the tests.
 
 Phase 3:
+
 In this phase, our file system supports more commands like tar, chmod and chown. We didn't do well in our presentation because we forgot to test the "gcc" 
 command. After that, we fixed that problem and now Professor Wolski's test files can be run in our file system, except that there are still some errors
 when compilling the file "c-file-test2.c".  We compiled this file on usual linux system and the same errors appeared. Others like Bonnie works fine on our file
@@ -40,10 +43,13 @@ We changed the block size from 512 bytes to 4048 bytes, which greatly shortens t
 Our test programs are all located in the "tests" subfolder. 
 1. ./test_mkfs /dev/vdb  
      Used to test the content of disk.
+
 2. ./test_all.sh /dev/vdb ../mnt
      Used to test operations about inodes and datablocks.
+
 3. We tested other commands like cp(-r), rm(-r), tar, gcc manually. To test "gcc", we copied the folder containing our project code to our file system and ran
 "make" which worked successfully.
+
 4. Our file system also supports multi-thread access, since we added multi-thread access protection in this phase. We tested it by manually opening multiple
 windows and tried to read or write files at the same time. 
 
