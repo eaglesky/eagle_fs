@@ -1,4 +1,3 @@
-.gitignore
 fs
 *.log
 fsconfig.h.*
